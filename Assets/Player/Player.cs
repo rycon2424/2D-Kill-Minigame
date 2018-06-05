@@ -41,11 +41,11 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, 0, 2);
+            transform.Rotate(0, 0, 3.5f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, -2);
+            transform.Rotate(0, 0, -3.5f);
         }
 
         if (timerSeconds == true)
