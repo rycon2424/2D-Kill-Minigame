@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(Vector2.up * -speed * Time.deltaTime);
+            transform.Translate(Vector2.up * -speed * 0.5f * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.A))

@@ -15,6 +15,7 @@ public class Civilians : MonoBehaviour {
     {
         alive = true;
         selfBox = gameObject.GetComponent<BoxCollider2D>();
+        player = GameObject.Find("Car");
     }
 
     void Update()
