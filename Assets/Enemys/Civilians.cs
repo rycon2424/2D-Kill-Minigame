@@ -8,6 +8,7 @@ public class Civilians : MonoBehaviour {
     public GameObject player;
     public float speed;
     public BoxCollider2D selfBox;
+    public GameObject blood;
 
     private bool alive;
 
@@ -34,6 +35,17 @@ public class Civilians : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
+            alive = false;
+            selfBox.enabled = false;
+            speed = 0;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Car")
+        {
+            Instantiate(blood, transform.position, transform.rotation);
             alive = false;
             selfBox.enabled = false;
             speed = 0;

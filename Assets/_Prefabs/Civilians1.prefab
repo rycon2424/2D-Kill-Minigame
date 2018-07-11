@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1139869612002462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.93, y: 6.67, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -86,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4874151, y: 1.8264576}
+  m_Size: {x: 1, y: 1.4}
   m_EdgeRadius: 0
 --- !u!114 &114729531933041300
 MonoBehaviour:
@@ -103,6 +103,7 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 1.5
   selfBox: {fileID: 0}
+  blood: {fileID: 1108102651612598, guid: d798065600510af4c8a7c3d1985c7357, type: 2}
 --- !u!212 &212451783796087590
 SpriteRenderer:
   m_ObjectHideFlags: 1
